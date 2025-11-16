@@ -6,7 +6,6 @@ public class Student {
     private String rollNumber;
     private String course;
 
-    // Default Constructor
     public Student() {}
     
     // Constructor for creating a new student (ID is auto-generated in DB)
@@ -24,20 +23,16 @@ public class Student {
         this.course = course;
     }
 
-    // --- Getters and Setters ---
-    // (You must include all getters and setters here)
     
-    // Example Getter
+    
     public int getId() {
         return id;
     }
     
-    // Example Setter
     public void setName(String name) {
         this.name = name;
     }
 
-    // Simple toString for easy printing
     @Override
     public String toString() {
         return "ID: " + id + ", Name: " + name + ", Roll No: " + rollNumber + ", Course: " + course;
